@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron Desktop</title>
+  </head>
+
+  <body>
+    <p id="platform">操作系统：</p>
+    <p id="release">版本号：</p>
+    <script src="./index3.js"></script>
+    h1>Save Text to Desktop</h1>
+    <textarea id="textInput" placeholder="Enter text to save..."></textarea>
+    <button onclick="saveTextFile()">Save to Desktop</button>
+
+    <script>
+        function saveTextFile() {
+            const textContent = document.getElementById('textInput').value;
+            const fileName = 'myTextFile.txt';
+            window.myAPI.saveText(fileName, textContent);
+        }
+    </script>
+  </body>
+</html>

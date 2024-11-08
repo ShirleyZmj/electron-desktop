@@ -1,0 +1,13 @@
+{
+  "name": "electron-desktop",
+  "version": "1.0.0",
+  "main": "src/main/index3.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "description": "build an electron desktop application",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  }
+}
