@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons">
+      <div onclick="windowApi.close()" class="red circle">x</div>
+      <div onclick="windowApi.minimize()" class="orange circle">-</div>
+      <div onclick="windowApi.fullScreen()" class="green circle">^</div>
+    </div>
+    <style>
+      .red {
+        background-color: red;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .green {
+        background-color: green;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+      }
+      .buttons {
+        display: flex;
+        width: 70px;
+        justify-content: space-between;
+      }
+    </style>
+  </body>
+</html>
