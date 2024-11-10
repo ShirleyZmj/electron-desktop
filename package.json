@@ -1,7 +1,7 @@
 {
   "name": "electron-desktop",
   "version": "1.0.0",
-  "main": "src/main/index6.js",
+  "main": "src/main/index7-menu.js",
   "license": "MIT",
   "scripts": {
     "start": "electron ."

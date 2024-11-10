@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron 自定义窗口 —— 桌面时钟 - 交通灯作业</title>
+  </head>
+  <body>
+    <button id="text-button">Click to open menu</button>
+  </body>
+  <script>
+    const button = document.getElementById("text-button");
+
+    button.addEventListener("click", () => {
+      window.menuApi.showMenu();
+    });
+
+    window.menuApi.onChangeStyle((event, style) => {
+      if (style === "color") {
+        button.style.color = button.style.color === "blue" ? "black" : "blue";
+      } else if (style === "bold") {
+        button.style.fontWeight =
+          button.style.fontWeight === "bold" ? "normal" : "bold";
+      }
+    });
+  </script>
+</html>

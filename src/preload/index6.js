@@ -13,3 +13,5 @@ contextBridge.exposeInMainWorld("windowApi", {
     ipcRenderer.invoke("close");
   },
 });
+
+// Electron 自定义窗口 —— 桌面时钟
